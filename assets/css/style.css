@@ -217,7 +217,7 @@ legend {
 .menu {
   background-color: var(--second-color);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 
   display: flex;
   justify-content: center;
@@ -285,7 +285,7 @@ legend {
   transition: all 200ms ease-in-out;
 }
 
-/*Derk Mode*/
+/*Dark Mode*/
 
 .darkMode {
   margin-left: 20px;
@@ -366,7 +366,7 @@ legend {
 
   overflow: hidden;
   width: 13ch;
-  animation: typing 1.5s steps(13), blink 1s infinite;
+  animation: typing 1s steps(13), blink 1s infinite;
 }
 
 
@@ -533,6 +533,7 @@ legend {
 
   padding: 20px;
 }
+
 
 .overText {
   grid-column-start: 1;
