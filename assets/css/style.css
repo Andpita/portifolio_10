@@ -122,6 +122,10 @@
   0% {
     width: 0ch;
   }
+
+  100% {
+    width: 13ch;
+  }
 }
 
 @keyframes blink {
@@ -712,3 +716,19 @@ legend {
 
   cursor: pointer;
 }
+
+.footer {
+  text-align: center;
+  font-size: 20px;
+  background: linear-gradient(to left, var(--primary-color) 10%, rgb(0, 0, 0) 50%, var(--primary-color) 90%);
+  color: white;
+  font-style: italic;
+  width: 100%;
+}
+
+#More {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
