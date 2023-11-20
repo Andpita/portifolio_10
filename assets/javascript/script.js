@@ -8,6 +8,7 @@ function prev() {
   currentSlide--;
   if (currentSlide < 0) currentSlide = qtdSlide - 1;
   if (currentSlide > 5) currentSlide = 4;
+
   updateMargin();
 }
 
@@ -27,7 +28,9 @@ function updateMargin(num) {
     n = 44
   } else if (currentSlide == 3) {
     n = 48
-  }
+  } else if (currentSlide == 4) {
+    n = 54
+  } 
 
 
   let newMargin = (sliderItemWidth + n) * currentSlide;
