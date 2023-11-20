@@ -405,7 +405,7 @@ legend {
   border-bottom-right-radius: 30%;
   margin: 2.5rem;
   padding: 2rem;
-  transition: all 1s ease-in-out;
+  transition: all 500ms ease-out;
 
   display: flex;
   flex-direction: column;
