@@ -30,7 +30,7 @@ function updateMargin(num) {
     n = 48
   } else if (currentSlide == 4) {
     n = 54
-  } 
+  }
 
 
   let newMargin = (sliderItemWidth + n) * currentSlide;
@@ -64,6 +64,39 @@ darkMode.addEventListener('click', () => {
 
 //
 
-function teste1() {
-  window.open('www.google.com.br', '_blank');
+function openLink(end) {
+  window.open(end, '_blank');
+}
+
+function fazPost(url, body) {
+  console.log("Body=", body)
+  let request = new XMLHttpRequest()
+  request.open("POST", url, true)
+  request.setRequestHeader("Content-type", "application/json")
+  request.send(JSON.stringify(body))
+
+  request.onload = function () {
+    console.log(this.responseText)
+  }
+
+  return request.responseText
+}
+
+function postContact() {
+  event.preventDefault();
+  let url = "https://ec-api.andpita.shop/ticket";
+  let userId = 1;
+  let userName = document.getElementById("name").value;
+  let userEmail = document.getElementById("email").value;
+  let textmessage = document.getElementById("textmessage").value;
+
+
+  body = {
+    userId,
+    userName,
+    userEmail,
+    textmessage,
+  }
+
+  fazPost(url, body)
 }

@@ -37,7 +37,7 @@
               </div>
               <div class="icon-circle">
                 <a href="https://github.com/Andpita">
-                  <img src="/assets/image/github-svgrepo-com.svg" />
+                  <img src="/assets/image/github-svgrepo-com.svg" target="_blank" />
                 </a>
               </div>
               <div class="icon-circle">
@@ -64,9 +64,10 @@
             <h1>BIO</h1>
             <div class="content-bio">
               <p>
-                Meu nome é Anderson Silva e sou um entusiasta em programação.
+                Meu nome é Anderson Silva e sou um entusiasta em programação.</br>
                 Tive meu primeiro contato com Javascript em 2021, e hoje sou um
-                apaixonado pela linguagem. Atualmente estou cursando Analise e
+                apaixonado pela linguagem. </br>
+                Atualmente estou cursando Analise e
                 Desenvolvimento de Sistemas (ADS) e buscando novos desafios na
                 área.
               </p>
@@ -83,16 +84,15 @@
                 />
               </div>
               <div class="certificados">
-                <div class="doc silver first">
+                <div class="doc silver first" style="margin-left: 20px;">
                   <h3>
                     Curso Superior em Analise e Desenvolvimento de Sistemas
                   </h3>
                   <div class="area2">
                     <div>
-                      <p>Situação: 1º semestre</p>
-                      <p>Duração: 5 semestres</p>
+                      <p>Situação: 2º semestre</p>
                       <p>Instituição: Estacio de Sá.</p>
-                      <p>Certificado: Link</p>
+                      <p>Certificado: Em breve...</p>
                     </div>
                     <div>
                       <img src="./assets/image/medal.svg" alt="" srcset="" />
@@ -112,7 +112,10 @@
                       <p>Instituição: Udemy</p>
                       <p>
                         Certificado:
-                        <a>Link</a>
+                        <a
+                        href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-0897d19d-2d3d-4f84-857a-48ad125f5716.pdf"
+                        >Link</a
+                      >
                       </p>
                     </div>
                     <div>
@@ -146,17 +149,23 @@
                   </div>
                 </div>
 
-                <div class="doc silver">
-                  <h3>Curso de React Native & Nestjs</h3>
+                <div 
+                  class="doc silver" 
+                  onclick="window.open('https://udemy-certificate.s3.amazonaws.com/pdf/UC-c745bf92-9778-48c9-befb-b7ae4d525174.pdf')"
+                >
+                  <h3>Curso de Reactjs & Nestjs</h3>
 
                   <div class="area2">
                     <div>
-                      <p>Situação: Em andamento.</p>
+                      <p>Situação: Concluído.</p>
                       <p>Duração: 41 horas.</p>
                       <p>Instituição: Udemy</p>
                       <p>
                         Certificado:
-                        <a>Link</a>
+                        <a
+                          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c745bf92-9778-48c9-befb-b7ae4d525174.pdf"
+                          >Link</a
+                        >
                       </p>
                     </div>
                     <div>
@@ -218,6 +227,7 @@
                     </div>
                   </div>
                 </div>
+                
               </div>
               <div class="right">
                 <img
@@ -235,56 +245,88 @@
           <h1 class="title-project">PROJETOS</h1>
 
           <div class="over">
+
+             <!--E-COMMERCE DESCRIÇÃO-->
             <div class="app-bio overText">
               <h4>E-commerce</h4>
               <p>
                 Um projeto de e-commecer criado do zero durante meu curso de
                 NestJs e React.
               </p>
-            </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <!--<button>CODE</button><-->
-                    <!--<button>APLICAÇÃO</button><-->
-                    <button style="background-color: red; color: white">
-                      Em Breve
-                    </button>
+             </div>
+            <div class="flex-style">
+
+             <!--WEB E-COMMERCE--> 
+              <div class="area">
+                <h3>E-commerce Web</h3>
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button onclick="openLink('https://github.com/Andpita/commerce')">
+                        CODE
+                     </button>
+                      <button  onclick="openLink('https://andpita.shop')">APLICAÇÃO</button>
                   </div>
-                  <img src="./assets/image/ec.png" />
-                </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img src="./assets/image/ts.svg" alt="" srcset="" />
-                    <img src="./assets/image/react.svg" alt="" srcset="" />
-                    <img src="./assets/image/styled.svg" alt="" srcset="" />
+                    <img src="./assets/image/ec.png" />
+                     </div>
+                 <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img src="./assets/image/ts.svg" alt="TypeScript" srcset="" />
+                      <img src="./assets/image/react.svg" alt="Reactjs" srcset="" />
+                      <img src="./assets/image/styled.svg" alt="Styled Components" srcset="" />
+                      <img src="./assets/image/antd.svg" alt="Ant Design" srcset="" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <button>
-                      <a
-                        href="https://github.com/Andpita/api_commerce"
-                        target="_blank"
-                        >CODE</a
-                      >
-                    </button>
+
+             <!--ADM E-COMMERCE--> 
+              <div class="area">
+                <h3>E-commerce Adm</h3>
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                     
+                        <button  onclick="openLink('https://github.com/Andpita/site_commerce')">
+                         CODE
+                        </button>
+                        <button  onclick="openLink('https://adm.andpita.shop')">APLICAÇÃO</button>
+                     
+                    </div>
+                    <img src="./assets/image/adm_ec.png" />
                   </div>
-                  <img src="./assets/image/code.png" />
+                  <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img src="./assets/image/ts.svg" alt="TypeScript" srcset="" />
+                      <img src="./assets/image/react.svg" alt="Reactjs" srcset="" />
+                      <img src="./assets/image/styled.svg" alt="Styled Components" srcset="" />
+                      <img src="./assets/image/antd.svg" alt="Ant Design" srcset="" />
+                    </div>
+                  </div>
                 </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img src="./assets/image/ts.svg" alt="" srcset="" />
-                    <img src="./assets/image/node.svg" alt="" srcset="" />
-                    <img src="./assets/image/nest.svg" alt="" srcset="" />
-                    <img src="./assets/image/pg.png" alt="" srcset="" />
+              </div>
+
+             <!--API E-COMMERCE-->
+              <div class="area">
+                <h3>E-commerce API</h3>
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button onclick="openLink('https://github.com/Andpita/api_commerce')" >
+                        CODE
+                    </button>
+                    </div>
+                    <img src="./assets/image/code.png" />
+                  </div>
+                  <div class="description-app">
+                    <div>
+                     <p style="color: black;">Tecnologias:</p>
+                      <img src="./assets/image/ts.svg" alt="" srcset="" />
+                      <img src="./assets/image/nest.svg" alt="" srcset="" />
+                      <img src="./assets/image/pg.png" alt="" srcset="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -292,92 +334,171 @@
           </div>
 
           <div class="over">
+
+            <!--CADASTRO DE PETS DESCRIÇÃO-->
             <div class="app-bio overText">
               <h4>Sistema de Cadastro de Pets</h4>
               <p>
-                Um projeto criado durante meu aprendizado em JavaScript e React.
+                Um projeto simples para praticar o CRUD, feito durante meu curso em JavaScript e React.
               </p>
             </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <button>
-                      <a
-                        href="https://github.com/Andpita/site_pet"
-                        target="_blank"
-                        >CODE</a
-                      >
-                    </button>
-                    <button>
-                      <a href="https://pets.andpita.online/" target="_blank"
-                        >APLICAÇÃO</a
-                      >
-                    </button>
+            <div class="flex-style">
+
+              <!--APP CADASTRO DE PETS-->
+              <div class="area">
+                <h3>Cadastro de Pets Web</h3>
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button onclick="openLink('https://github.com/Andpita/site_pet')">
+                          CODE
+                      </button>
+                      <button onclick="openLink('https://pets.andpita.online/')">
+                          APLICAÇÃO
+                      </button>
+                    </div>
+                    <img src="./assets/image/pet.png" />
                   </div>
-                  <img src="./assets/image/sys.jpg" />
-                </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img
-                      src="./assets/image/javascript-svgrepo-com.svg"
-                      alt="JavaScript"
-                      srcset=""
-                    />
-                    <img src="./assets/image/react.svg" alt="" srcset="" />
-                    <img src="./assets/image/styled.svg" alt="" srcset="" />
-                    <img
-                      src="./assets/image/redux-svgrepo-com.svg"
-                      alt=""
-                      srcset=""
-                    />
+                  <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img
+                        src="./assets/image/javascript-svgrepo-com.svg"
+                        alt="JavaScript"
+                        srcset=""
+                      />
+                      <img src="./assets/image/react.svg" alt="" srcset="" />
+                      <img src="./assets/image/styled.svg" alt="" srcset="" />
+                      <img
+                        src="./assets/image/redux-svgrepo-com.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <button>
-                      <a
-                        href="https://github.com/Andpita/api_pet"
-                        target="_blank"
-                        >CODE</a
-                      >
-                    </button>
+
+              <!--API CADASTRO DE PETS-->
+              <div class="area">
+                <h3>Cadastro de Pets API</h3>
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button>
+                        <a
+                          href="https://github.com/Andpita/api_pet"
+                          target="_blank"
+                          >CODE</a
+                        >
+                      </button>
+                    </div>
+                    <img src="./assets/image/code.png" />
                   </div>
-                  <img src="./assets/image/code.png" />
+                  <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img
+                        src="./assets/image/javascript-svgrepo-com.svg"
+                        alt="JavaScript"
+                        srcset=""
+                      />
+                      <img src="./assets/image/express.svg" alt="" srcset="" />
+                      <img src="./assets/image/sequelize.svg" alt="" srcset="" />
+                      <img
+                        src="./assets/image/mariadb-svgrepo-com.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img
-                      src="./assets/image/javascript-svgrepo-com.svg"
-                      alt="JavaScript"
-                      srcset=""
-                    />
-                    <img src="./assets/image/node.svg" alt="" srcset="" />
-                    <img src="./assets/image/sequelize.svg" alt="" srcset="" />
-                    <img
-                      src="./assets/image/mariadb-svgrepo-com.svg"
-                      alt=""
-                      srcset=""
-                    />
+              </div>
+
+          </div>
+          </div>
+
+          <div class="over"> 
+            <!--SAMURAI WARS DESCRIÇÃO--> 
+            <div class="app-bio overText">
+              <h4>Samurai Wars</h4>
+              <p>Um jogo criado do zero sobre samurais.</p>
+            </div>
+            <div class="flex-style">
+
+              <!--SAMURAI WARS APP-->
+              <div class="area">
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button onclick="openLink('https://github.com/Andpita/site_samuraiwars')">
+                        CODE
+                      </button>
+                      <button onclick="openLink('https://samuraiwars.online/')">
+                        APLICAÇÃO
+                      </button>
+                    </div>
+                    <img src="./assets/image/sw.png" />
+                  </div>
+                  <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img
+                        src="./assets/image/javascript-svgrepo-com.svg"
+                        alt="JavaScript"
+                        srcset=""
+                      />
+                      <img src="./assets/image/react.svg" alt="" srcset="" />
+                      <img
+                        src="./assets/image/redux-svgrepo-com.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <img src="./assets/image/styled.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--SAMURAI WARS API-->
+              <div class="area">
+                <div class="app">
+                  <div class="gridOn image-app">
+                    <div class="but">
+                      <button onclick="openLink('https://github.com/Andpita/api_samuraiwars')">
+                       CODE
+                      </button>
+                    </div>
+                    <img src="./assets/image/code.png" />
+                  </div>
+                  <div class="description-app">
+                    <div>
+                      <p style="color: black;">Tecnologias:</p>
+                      <img
+                        src="./assets/image/javascript-svgrepo-com.svg"
+                        alt="JavaScript"
+                        srcset=""
+                      />
+                      <img src="./assets/image/node.svg" alt="" srcset="" />
+                      <img src="./assets/image/sequelize.svg" alt="" srcset="" />
+                      <img src="./assets/image/sql.svg" alt="" srcset="" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+
           <div class="over">
             <div class="app-bio overText">
-              <h4>Aplicativo de Finanças</h4>
+              <h4>Blog de Curiosidades</h4>
               <p>
-                Um projeto criado do zero por mim, para controle de finanças.
+                Um blog com curiosidades.
               </p>
             </div>
+
+            <div class="flex-style">
             <div class="area">
               <div class="app">
                 <div class="gridOn image-app">
@@ -388,7 +509,7 @@
                       Em Breve
                     </button>
                   </div>
-                  <img src="./assets/image/ec.jpg" />
+                  <img src="./assets/image/blog.png" />
                 </div>
                 <div class="description-app">
                   <div>
@@ -432,81 +553,9 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
 
-          <div class="over">
-            <div class="app-bio overText">
-              <h4>Samurai Wars</h4>
-              <p>Um jogo criado do zero sobre samurais.</p>
-            </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <button>
-                      <a
-                        href="https://github.com/Andpita/site_samuraiwars"
-                        target="_blank"
-                        >CODE</a
-                      >
-                    </button>
-                    <button>
-                      <a href="https://samuraiwars.online/" target="_blank"
-                        >APLICAÇÃO</a
-                      >
-                    </button>
-                  </div>
-                  <img src="./assets/image/sw.png" />
-                </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img
-                      src="./assets/image/javascript-svgrepo-com.svg"
-                      alt="JavaScript"
-                      srcset=""
-                    />
-                    <img src="./assets/image/react.svg" alt="" srcset="" />
-                    <img
-                      src="./assets/image/redux-svgrepo-com.svg"
-                      alt=""
-                      srcset=""
-                    />
-                    <img src="./assets/image/styled.svg" alt="" srcset="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="area">
-              <div class="app">
-                <div class="gridOn image-app">
-                  <div class="but">
-                    <button>
-                      <a
-                        href="https://github.com/Andpita/api_samuraiwars"
-                        target="_blank"
-                        >CODE</a
-                      >
-                    </button>
-                  </div>
-                  <img src="./assets/image/code.png" />
-                </div>
-                <div class="description-app">
-                  <div>
-                    <p>Tecnologias:</p>
-                    <img
-                      src="./assets/image/javascript-svgrepo-com.svg"
-                      alt="JavaScript"
-                      srcset=""
-                    />
-                    <img src="./assets/image/node.svg" alt="" srcset="" />
-                    <img src="./assets/image/sequelize.svg" alt="" srcset="" />
-                    <img src="./assets/image/sql.svg" alt="" srcset="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         <section id="Contact" class="sec1">
@@ -515,12 +564,13 @@
             <fieldset class="form-flex">
               <legend>Contact me</legend>
 
+            <form onsubmit="postContact()">
               <div class="form-group">
-                <label for="first-name">Nome</label>
+                <label for="name">Nome</label>
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="name"
+                  id="name"
                   placeholder="Seu nome"
                 />
               </div>
@@ -536,23 +586,67 @@
               <div class="form-group full-width">
                 <label for="message">Texto</label>
                 <textarea
-                  name="message"
-                  id="message"
+                  name="textmessage"
+                  id="textmessage"
                   cols="30"
                   rows="5"
                   placeholder="Olá..."
+                  style="resize: none;"
                 ></textarea>
               </div>
               <div class="form-group full-width submit">
                 <button type="submit">Enviar</button>
               </div>
+            </form>
             </fieldset>
           </div>
         </section>
+        
         <section id="More" class="sec1">
           <h1>Mais</h1>
-          <p>Em breve :D</p>
-          <div class="footer">Em construção. Editado 20/11/2023;</div>
+<div style="display: flex;">
+
+          <div class="area">
+            <h3>Site de Jogos</h3>
+            <div class="app">
+              <div class="gridOn image-app">
+                <div class="but">
+                  <button onclick="openLink('https://github.com/Andpita/games_app')">
+                      CODE
+                  </button>
+                  <button onclick="openLink('https://games.andpita.online/')">
+                      APLICAÇÃO
+                  </button>
+                </div>
+                <img src="./assets/image/games.png" />
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <h3>Em breve</h3>
+            <div class="app">
+              <div class="gridOn image-app">
+                <div class="but">
+                 
+                </div>
+                <img src="./assets/image/code.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="area">
+            <h3>Em breve</h3>
+            <div class="app">
+              <div class="gridOn image-app">
+                <div class="but">
+                
+                </div>
+                <img src="./assets/image/code.png" />
+              </div>
+            </div>
+          </div>
+</div>
+          <div class="footer">Editado 02/04/2024;</div>
         </section>
       </div>
     </div>
